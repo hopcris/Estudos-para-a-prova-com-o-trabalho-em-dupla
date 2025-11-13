@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Larissa", "Larissa.csproj", "{196A9618-89A5-26CF-0E02-60F0EC7CE680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{196A9618-89A5-26CF-0E02-60F0EC7CE680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196A9618-89A5-26CF-0E02-60F0EC7CE680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196A9618-89A5-26CF-0E02-60F0EC7CE680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196A9618-89A5-26CF-0E02-60F0EC7CE680}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CD05DC4-2348-4F55-9AD8-FA3F316B69C6}
+	EndGlobalSection
+EndGlobal

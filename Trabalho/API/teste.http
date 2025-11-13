@@ -1,0 +1,24 @@
+###Cadastro da folha de pagamento
+POST http://localhost:5085/api/folha/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Ana Souza",
+  "cpf": "123.456.789-00",
+  "mes": 1,
+  "ano": 2001,
+  "horasTrabalhadas": 160,
+  "valorHora": 50
+}
+
+###Listar todas as folhas
+GET http://localhost:5085/api/folha/listar
+
+###Procurar folha pelo Cpf, mes e ano
+GET http://localhost:5085/api/folha/buscar/123.456.789-00/12/2025
+
+###Listar o total liquido 
+GET http://localhost:5085/api/folha/total-liquido
+
+###Deletar por cpf, mes e ano
+DELETE http://localhost:5085/api/folha/remover/123.456.789-00/10/2025
