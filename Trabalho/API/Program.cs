@@ -5,6 +5,15 @@ using SQLitePCL;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Context>();
+
+builder.Services.AddCors(options =>
+    options.AddPolicy("Acesso Total",
+        configs => configs
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod())
+);
+
 var app = builder.Build();
 
 app.MapGet("/", () => "API de folha de pagamento");
@@ -146,6 +155,8 @@ app.MapGet("/api/folha/total-liquido", async ([FromServices] Context ctx) =>
     };
     return Results.Ok(resultado);
 });
+
+app.UseCors("Acesso Total");
 
 app.Run();
 
